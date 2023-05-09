@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="icon" href="./img/favicon.ico">
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="./css/bootstrap-icons.css">
+    <!-- custom bootstrap5  -->
+    <link rel="stylesheet" href="./css/all.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a href="#"><img src="./img/六福堂LOGO.svg" alt="" class="img-fluid"></a>
+                <p>
+                    早9:00-12:00/午14:00-18:00/晚18:30-22:00
+                </p>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="topLinkBox">
+                    <a class="btn btn-primary" href="#">辦帳號</a>
+                    <a class="btn btn-primary" href="#">預約視訊</a>
+                    <a class="btn btn-primary active" href="#">查詢/取消</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <form id="form1" action="">
+                <div class="container col-lg-6 mx-auto">
+                    <div class="row">
+                        <div class="col-auto">
+                            預約日期：
+                        </div>
+                        <div class="col">
+                            2022-09-23
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-auto">
+                            初診/複診：
+                        </div>
+                        <div class="col">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="reg_ft" id="ft1" value="Y" required>
+                                <label class="form-check-label" for="ft1">複診</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="reg_ft" id="ft2" value="N">
+                                <label class="form-check-label" for="ft2">初診</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-auto">
+                            門診類別：
+                        </div>
+                        <div class="col">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="seeType" id="seeType1" value="N" required>
+                                <label class="form-check-label" for="seeType1">一般視訊</label>
+                                <div class="imgBox pb-4">
+                                    <img src="./img/onlink.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="seeType" id="seeType2" value="Y">
+                                <label class="form-check-label" for="seeType2">確診視訊</label>
+                                <div class="imgBox">
+                                    <img src="./img/onlink2.jpg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-auto">
+                            預約時段：
+                        </div>
+                        <div class="col">
+                            午診
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-auto">
+                            看診醫師：
+                        </div>
+                        <div class="col">
+                            楊佳峰
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            預約掛號：
+                        </div>
+                        <div class="col">
+                            <select class="form-control" name="reg_no" id="reg_no" required>
+                                <option value="" selected="">請選擇就診號碼</option>
+                                <option value="123">123</option>
+                                <option value="124">124</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            出身年月日：
+                        </div>
+                        <div class="col d-flex pe-sm-0">
+                            <div class="col pe-sm-1">
+                                <select class="form-control" id="ddl_year" name="ddl_year" value="">
+                                </select>
+                            </div>
+                            <div class="col pe-sm-1">
+                                <select class="form-control" id="ddl_month" name="ddl_month" value="">
+                                </select>
+                            </div>
+                            <div class="col pe-sm-0">
+                                <select class="form-control" id="ddl_day" name="ddl_day" value="">
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-auto d-flex align-items-center justify-content-end">
+                            <div>身份證字號
+                                <br>
+                                居留證字號
+                            </div>
+                            <div>：</div>
+                        </div>
+                        <div class="col">
+                            <input id="txtID" name="txtID" class="form-control" type="text" required placeholder="">
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            輸入姓名：
+                        </div>
+                        <div class="col">
+                            <input id="txtName" name="txtName" class="form-control" type="text" required placeholder="">
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            行動電話：
+                        </div>
+                        <div class="col">
+                            <input id="txtMobile" name="txtMobile" class="form-control" type="text" required placeholder="">
+                        </div>
+                    </div>
+                    <div class="row custom">
+                        <div class="col-auto">
+                            領取藥物：
+                        </div>
+                        <div class="col d-flex pe-0 align-items-center">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="reMed" id="reMed1" value="Y">
+                                <label class="form-check-label" for="reMed1">本人</label>
+                            </div>
+                            <div class="form-check form-check-inline ms-sm-auto me-sm-0">
+                                <input class="form-check-input" type="radio" name="reMed" id="reMed2" value="N">
+                                <label class="form-check-label" for="reMed2">親友</label>
+                                <input id="reMed2_name" name="reMed2_name" class="form-control form-control-sm" type="text" placeholder="他的姓名">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center pt-4">
+                        <a class="btn btn-primary" onclick="history.back()">上一步</a>
+                        <button id="sub1" type="button" class="btn btn-primary">確認送出</button>
+                    </div>
+
+
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="copy">
+            <div class="container text-center">
+                六福堂中醫診所版權所有<br> © 2022 All Rights Reserved. Design by 海納川數位科技 網站設計 醫療APP
+            </div>
+        </div>
+    </footer>
+    <!-- ModalSub1 -->
+    <div class="modal fade" id="ModalSub1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="text-center">
+                        確認要預約掛號？
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">取消</button>
+                    <button id="sub2" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ModalSub2">確定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ModalSub2 -->
+    <div class="modal fade" id="ModalSub2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="text-center">
+                        <span class="text-danger">
+                            您的視訊門診預約為 ◯◯◯ 號
+                        </span>
+                        <br>
+                        請返回LINE官方傳送健保卡
+                        <br>
+                        -<br>
+                        若為確診者，請傳隔離通知<br>並填寫健康狀況，完成預約
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-bs-dismiss="modal">取消</button>
+                    <button id="sub3" type="button" class="btn" class="btn" data-bs-dismiss="modal">確定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- 1.19.0 jquery.validate.js -->
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        $(function () {
+
+            // jquery.validate
+            $.extend($.validator.messages, {
+                required: "必填",
+            });
+            $('.form-check').click(function () {
+                if ($('#seeType2').is(':checked')) {
+                    $('#reMed1').prop('checked', false)
+                    $('#reMed1').prop('disabled', 'disabled')
+                }
+                else if ($('#seeType1').is(':checked')) {
+                    $('#reMed1').prop("disabled", false);
+                }
+            })
+            $('#sub1').click(function () {
+                if (!$("#form1").validate().form()) {
+                    return false;
+                } else {
+                    $('#ModalSub1').modal('show')
+                }
+            })
+
+
+            $('#sub2').click(function () {
+                $('#ModalSub1').modal('hide')
+                $('body').addClass('modal-active')
+
+            })
+            $('#ModalSub2').on('hidden.bs.modal', function (e) {
+                $('body').removeClass('modal-active')
+
+            });
+
+        })
+    </script>
+</body>
+
+</html>
