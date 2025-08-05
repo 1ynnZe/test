@@ -419,9 +419,8 @@
 
 
         $(function () {
-            new WOW().init();
-
-            let lastScrollTop = 0, delta = 5;
+            if ($(window).width() > 992) {
+                   let lastScrollTop = 0, delta = 5;
             $(window).scroll(function () {
                 var nowScrollTop = $(this).scrollTop();
                 if (Math.abs(lastScrollTop - nowScrollTop) >= delta) {
@@ -436,10 +435,15 @@
                     lastScrollTop = nowScrollTop;
                 }
             });
+            }
+            new WOW().init();
+
+         
 
         })
 
     </script>
 </body>
+
 
 </html>
