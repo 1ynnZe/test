@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>梵雅康健</title>
+    <link rel="icon" href="favicon.ico">
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="./css/bootstrap-icons.css">
+    <!-- font awesome 6.0.0 -->
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <!--  swiper 11.2.8-->
+    <link rel="stylesheet" href="./css/swiper@11/swiper-bundle.min.css" />
+    <!-- wow -->
+    <!-- <link rel="stylesheet" href="./css/animate.css"> -->
+
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+    <!-- custom bootstrap  -->
+    <link rel="stylesheet" href="./css/all.css">
+
+    <style>
+        /* 只有首頁 */
+
+        html {
+            height: calc(100vh - 0px);
+            scroll-snap-type: y mandatory;
+            scroll-padding-top: 77px;
+            scroll-margin-top: 77px;
+            scroll-behavior: smooth;
+        }
+
+
+        .sc-snap {
+            scroll-snap-align: start;
+            min-height: calc(100vh - 77px);
+        }
+
+        @media (max-width:992px) {
+            .sc-snap:first-child {
+                min-height: 200px;
+            }
+
+        }
+
+        footer.sc-snap {
+            scroll-snap-align: start;
+            min-height: auto;
+        }
+    </style>
+
+
+
+</head>
+
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg position-relative">
+            <div class="container justify-content-center">
+                <div class="col-auto">
+                    <!-- logo -->
+                    <a class="navbar-brand" href="./index.html">
+                        <img class="img-fluid" src='./img/logo.png' alt="梵雅康健 Fanya Regenerative Health">
+                    </a>
+                </div>
+                <div class="navbar_list ms-auto">
+                    <!-- 手機版 漢堡選單btn -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="menu-burger"></div>
+                    </button>
+                    <div id="navbarNav" class="collapse navbar-collapse ">
+                        <!-- 主選單 -->
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a class="nav-link" href="./news.html">最新消息</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./service.html">服務介紹</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./team.html">醫療團隊</a>
+                            </li>
+                            <li class="navbar-nav_dropdown">
+                                <a class="nav-link" data-href="./treat.html">精選療程推薦</a><a class="m_dropdownBtn"><i
+                                        class="bi bi-chevron-down"></i></a>
+                                <div class="scroll-wrapper">
+                                    <ul class="scroll-wrapper_menu">
+                                        <li> <a href="./cases.html" class="nav-link">
+                                                實證案例</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a class="nav-link" href="./qa.html">常見問題</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./clinic.html">門診時間</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./product.html">醫美產品</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./member.html">會員專區</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./contact.html">聯絡我們</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main id="main">
+        <!-- banner -->
+        <section class="sc-snap" id="sec1">
+            <!-- banner輪播 -->
+            <div id="carouselBanner" class="carousel slide carousel-fade " data-bs-ride="carousel"
+                data-bs-ride="carousel" data-bs-pause="false" data-bs-interval="4000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/banner1.png" class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/banner2.png" class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 精選療程推薦 -->
+        <section class="rt sc-snap" id="sec2">
+            <div class="container  py-lg-5">
+                <div class="outter-box">
+                    <div class="title_i_box wow fadeInDown" data-wow-duration="2s" data-aos="fade-down"
+                        data-aos-duration="2000">
+                        <h6>Recommended Treatment</h6>
+                        <h4>精選療程推薦</h4>
+                    </div>
+                    <div class="swiper-outter">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"> <a href="./treat_page.html">
+                                        <img src="./img/t1.jpg">
+                                        <h5>EECP 體外反搏療程</h5>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="./treat_page.html"> <img src="./img/t2.jpg">
+                                        <h5> K2 血液淨化療程
+                                        </h5>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="./treat_page.html"> <img src="./img/t4.jpg">
+                                        <h5>代謝優化與健康體重管理
+                                            <br>（SLIM減重方案）
+                                        </h5>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide"> <a href="./treat_page.html">
+                                        <img src="./img/t6.jpg">
+                                        <h5>外泌體水光針與逆齡肌膚修復課程
+                                        </h5>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide"> <a href="./treat_page.html">
+                                        <img src="./img/t7.jpg">
+                                        <h5>醫美針劑療程 <br>（抗老塑形）
+                                        </h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 點點 -->
+                        <div class="swiper-pagination"></div>
+
+                    </div>
+                </div>
+        </section>
+        <!-- 最新公告 -->
+        <section class="sc-snap" id="sec3">
+            <div class="container py-lg-5">
+                <div class="outter-box ">
+                    <div class="title_i_box wow fadeInDown" data-wow-duration="2s" data-aos="fade-down"
+                        data-aos-duration="2000">
+                        <h6>NEWS</h6>
+                        <h4>最新消息</h4>
+                    </div>
+
+                    <div class="news_list wow fadeInRight" data-wow-duration="3s" data-aos="fade-right"
+                        data-aos-duration="3000">
+                        <ul>
+                            <li>
+                                <a href="./news_page.html">
+                                    <span>2025-07-11</span>
+                                    <p>2025/8月份 門診時間表</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./news_page.html">
+                                    <span>2025-06-20</span>
+                                    <p>2025/7月份 門診時間表</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./news_page.html">
+                                    <span>2025-06-03</span>
+                                    <p>皮膚專科女醫師專業除毛，夏日光滑計畫從現在開始！</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./news_page.html">
+                                    <span>2025-06-03</span>
+                                    <p>JUVELOOK喬雅露-肌膚童顏！</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./news_page.html">
+                                    <span>2025-06-03</span>
+                                    <p>新寵 Bella Pro 水光機到診所啦！日韓最愛使用的水光機型！</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-center mt-5">
+                        <a class="btn btn-primary wow fadeInLeft" data-wow-duration="3s" data-wow-delay=".3s"
+                            data-aos="fade-left" data-aos-duration="2000" data-aos-delay="300"
+                            href="./news.html">查看更多<span>+</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 關於梵雅 -->
+        <section class="ab sc-snap" id="sec4">
+            <img class="bg-logo img-fluid" src="./img/logo_Gray.png" alt="梵雅康健 Fanya Regenerative Health">
+            <div class="container-fluid px-md-5 py-3">
+                <div class="row ">
+                    <div class="col-lg-4 col-6 order-2 order-xl-0">
+                        <div class="box-img box-img1 wow fadeInLeft" data-wow-duration="2s" data-aos="fade-left"
+                            data-aos-duration="2000">
+                            <img class="img-fluid" src="./img/box-img1.png" alt="梵雅康健 Fanya Regenerative Health">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="box-1  title-a wow fadeInUp" data-wow-duration="2s" data-aos="fade-up"
+                            data-aos-duration="2000">
+                            <h4>關於梵雅<span>About Us</span></h4>
+                            <div class="desc">
+                                <span class="title-b">淨化循環，啟動年輕自癒力<br>
+                                </span>
+                                <p> 梵雅康健專注於高效能的洗血抗老療程， 融合再生醫學、功能營養學與精準檢測技術， 致力於協助現代人逆轉老化、活化代謝、啟動自癒力，
+                                    打造以科學為本、身心兼顧的預防醫學新選擇。</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-6 text-end  order-3">
+                        <div class="box-img box-img2 wow fadeInRight" data-wow-duration="2s" data-aos="fade-right"
+                            data-aos-duration="2000">
+                            <img class="img-fluid" src="./img/box-img2.png" alt="梵雅康健 Fanya Regenerative Health">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row  justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="box-2 title-a wow fadeInUp" data-wow-delay=".5s" data-wow-duration="2s"
+                            data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
+                            <div class="desc">
+                                <span class="title-b">從血液開始，重啟健康節奏<br>
+                                </span>
+                                <p> 在醫療與保健領域之間，梵雅康健以專業為根本、科技為依據，<br class="d-none d-lg-block">延伸出兼顧「醫學嚴謹性」與
+                                    「生活身心平衡」的品牌形象。
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+        <!-- 關於梵雅2 -->
+        <section class="ab2 sc-snap" id="sec5">
+            <div class="container py-5">
+                <div class="row justify-content-center align-items-center py-5">
+                    <div class="col-lg-4">
+                        <div class="box-3 title-b wow fadeInRight" data-wow-duration="3s" data-aos="fade-right"
+                            data-aos-duration="3000">
+                            科學逆齡，活出本質年輕
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 order-3 order-lg-0">
+                        <div class="box-img box-img3 position-relative">
+                            <img class="img-fluid wow fadeInLeft" data-wow-duration="2s" data-aos="fade-left"
+                                data-aos-duration="2000" src="./img/box-img3.png" alt="梵雅康健 Fanya Regenerative Health">
+                            <div class="logo-w ">
+                                <img class="img-fluid wow fadeInRight" data-wow-duration="2s" data-aos="fade-right"
+                                    data-aos-duration="2000" src="./img/logo_W.png"
+                                    alt="梵雅康健 Fanya Regenerative Health">
+                            </div>
+                        </div>
+                        <div class="s ">
+                            <a class="btn btn-secondary  wow  fadeInRight" data-wow-duration="2s" data-aos="fade-right"
+                                data-aos-duration="2000" href="./member.html" target="_blank">會員專區<span>+</span></a>
+                            <a class="btn btn-secondary wow  fadeInRight" data-wow-duration="2s" data-aos="fade-right"
+                                data-aos-duration="2000" href="tel:0212345678">撥打電話<span>+</span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 pb-3 pb-lg-0">
+                        <div class="box-3 title-a wow fadeInLeft" data-wow-duration="3s" data-aos="fade-left"
+                            data-aos-duration="3000">
+                            <p>我們相信，真正的健康不是治療疾病，<br class="d-none d-lg-block">
+                                而是從源頭預防、從循環開始、<br class="d-none d-lg-block">
+                                由內而外活化每一個細胞的年輕力。
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 醫療團隊 -->
+        <section class="sc-snap" id="sec6">
+            <div class="container py-5">
+                <div class="outter-box">
+                    <div class="title_i_box wow fadeInDown" data-wow-duration="2s" data-aos="fade-down"
+                        data-aos-duration="2000">
+                        <h6>Our Team</h6>
+                        <h4>醫療團隊</h4>
+                    </div>
+                    <div class="doctor_box">
+                        <div class="swiper-outter">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a class="doctor" href="./team_doctor1.html">
+                                            <img src="./img/doctor_f.png" alt="梵雅康健 Fanya Regenerative Health">
+                                            <h6 class="doctor_name"><span>許茗鈞</span>醫師</h6>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a class="doctor" href="./team_doctor1.html">
+                                            <img src="./img/doctor_m.png" alt="梵雅康健 Fanya Regenerative Health">
+                                            <h6 class="doctor_name"><span>王大明</span>醫師</h6>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a class="doctor" href="./team_doctor1.html">
+                                            <img src="./img/doctor_f.png" alt="梵雅康健 Fanya Regenerative Health">
+                                            <h6 class="doctor_name"><span>胡怡萱</span>醫師</h6>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a class="doctor" href="./team_doctor1.html">
+                                            <img src="./img/doctor_m.png" alt="梵雅康健 Fanya Regenerative Health">
+                                            <h6 class="doctor_name"><span>劉人鳳</span>醫師</h6>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a class="doctor" href="./team_doctor1.html">
+                                            <img src="./img/doctor_f.png" alt="梵雅康健 Fanya Regenerative Health">
+                                            <h6 class="doctor_name"><span>吳若薇</span>醫師</h6>
+                                        </a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <!-- 點點 -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-5">
+                        <a class="btn-primary wow fadeInLeft" data-wow-duration="4s" data-aos="fade-left"
+                            data-aos-duration="3000" href="./team.html">查看更多<span>+</span></a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="sc-snap ">
+        <div class="footer_info">
+            <div class="footer_logo">
+                <a href="https://www.brillianskin.tw"><img src="./img/logo.png"
+                        alt="梵雅康健 Fanya Regenerative Health"></a>
+            </div>
+            <ul>
+                <li>
+                    <p class="line"><a target="_blank" href="https://line.me/ti/p/@abcdefg">@abcdefg</a>
+                    </p>
+                    <p class="tel"><a>02-12345678</a></p>
+                    <p class="mail"><a>abcdefg@gmail.com</a></p>
+                    <p class="add"><a>台北市○○區○○路○○號 ○樓</a></p>
+                    <div class="box_link">
+                        <a target="_blank" href="https://www.facebook.com/brilliantskin.2024 "><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a target="_blank" href="https://line.me/ti/p/@abcdefg"><i class="fa-brands fa-line"></i></a>
+                        <!-- <a target="_blank"  href="tel:02-12345678"><i
+                                class="fa-solid fa-video"></i></a> -->
+                        <!-- <a target="_blank" href="mailto:abcdefg@gmail.com"><i class="far fa-envelope"></i></a> -->
+                        <a class="me_tp_ig" target="_blank" href="https://www.instagram.com/abcdefg/ "><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <div class="copy">© 2025 Fanya Regenerative Health. All Rights Reserved.</div>
+
+    </footer>
+    <!-- 側邊浮動按鈕 -->
+    <div class="fix_ri">
+        <a href="https://line.me/ti/p/@abcdefg" target="_blank">
+            <img src="./img/line.png" alt="梵雅康健 Fanya Regenerative Health">
+        </a>
+        <a href="https://www.facebook.com/brilliantskin.2024" target="_blank">
+            <img src="./img/fb.png" alt="梵雅康健 Fanya Regenerative Health">
+        </a>
+        <a href="https://www.instagram.com/abcdefg/" target="_blank">
+            <img src="./img/ig.png" alt="梵雅康健 Fanya Regenerative Health">
+        </a>
+        <a href="tel:0212345678" target="_blank">
+            <img src="./img/tel.png" alt="梵雅康健 Fanya Regenerative Health">
+        </a>
+        <a href="https://maps.app.goo.gl/sW4xc3MXgT2hD1Fs6" target="_blank">
+            <img src="./img/add.png" alt="梵雅康健 Fanya Regenerative Health">
+        </a>
+
+    </div>
+
+
+    <button id="js-goTopBtn" href="#main" class="goTop-btn"><i class="bi bi-chevron-up"></i>
+        <span>TOP</span>
+    </button>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!--  swiper  11.2.8-->
+    <script src="./css/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/clamp.js"></script>
+    <!-- wow -->
+    <!-- <script src="./js/wow.min.js"></script> -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script src="./js/main.js"></script>
+    <script>
+        $(function () {
+
+            AOS.init({
+                once: true // 所有動畫只執行一次
+            });
+        })
+
+    </script>
+</body>
+</body>
+
+</html>
