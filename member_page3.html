@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>梵雅康健</title>
+    <link rel="icon" href="favicon.ico">
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="./css/bootstrap-icons.css">
+    <!-- font awesome 6.0.0 -->
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <!--  swiper 11.2.8-->
+    <link rel="stylesheet" href="./css/swiper@11/swiper-bundle.min.css" />
+    <!-- wow -->
+    <link rel="stylesheet" href="./css/animate.css">
+    <!-- custom bootstrap  -->
+    <link rel="stylesheet" href="./css/all.css">
+</head>
+
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg position-relative">
+            <div class="container justify-content-center">
+                <div class="col-auto">
+                    <!-- logo -->
+                    <a class="navbar-brand" href="./index.html">
+                        <img class="img-fluid" src='./img/logo.png'>
+                    </a>
+                </div>
+                <div class="navbar_list ms-auto">
+                    <!-- 手機版 漢堡選單btn -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="menu-burger"></div>
+                    </button>
+                    <div id="navbarNav" class="collapse navbar-collapse ">
+                        <!-- 主選單 -->
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a class="nav-link" href="./news.html">最新消息</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./service.html">服務介紹</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./team.html">醫療團隊</a>
+                            </li>
+                            <li class="navbar-nav_dropdown">
+                                <a class="nav-link" data-href="./treat.html">精選療程推薦</a><a class="m_dropdownBtn"><i
+                                        class="bi bi-chevron-down"></i></a>
+                                <div class="scroll-wrapper">
+                                    <ul class="scroll-wrapper_menu">
+                                        <li> <a href="./cases.html" class="nav-link">
+                                                實證案例</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a class="nav-link" href="./qa.html">常見問題</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./clinic.html">門診時間</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./product.html">醫美產品</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./member.html">會員專區</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./contact.html">聯絡我們</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main id="main">
+        <!-- 內頁banner  -->
+        <section>
+            <div class="container">
+                <div class="banner banblog">
+                    <div class="en">Members</div>
+                    <h5>會員專區</h5>
+                </div>
+            </div>
+        </section>
+        <!-- Page Content -->
+        <section class="m-bg2 bg-light">
+            <div class="container">
+                <div class="row outter-box">
+                    <!-- 側邊分類 -->
+                    <div class="col-lg-auto sideblog">
+                        <!-- 分類 -->
+                        <!-- <button data-bs-toggle="collapse" href="#collapseSide" role="button" aria-expanded="false"
+                            aria-controls="collapseSide" class="d-lg-none btn accordion-btn my-3">
+                            <span>全部展開</span>
+                            <span class="arrow-down"></span>
+                        </button> -->
+                        <ul id="collapseSide" class="accordion">
+                            <li class="accordion_item">
+                                <a href="./member_page1.html">後台會員管理</a>
+                            </li>
+                            <li class="accordion_item">
+                                <a href="./member_page2.html">預約紀錄查詢</a>
+
+                            </li>
+                            <li class="accordion_item active">
+                                <a href="./member_page3.html">健康問卷</a>
+                            </li>
+                            <li class="accordion_item">
+                                <a href="./member_page4.html">PDF報告下載</a>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 主要內容 -->
+                    <div class="col-lg listblog_outter">
+                        <h4 class="blog_category_title d-none d-lg-block">健康問卷</h4>
+                        <div class="form-card p-lg-5 pb-5 pt-3">
+                            <form action="">
+                                <div class="survey row">
+                                    <div class="col-12">
+                                        <div class="input-box">
+                                            <label> <span class="required_text">*</span> 您目前的工作是?</label>
+                                            <div class="form-control">
+                                                <label><input class="form-check-input" type="radio" name="rg1" id="r1"
+                                                        checked>營建/油漆/機具製造/電子設備/手工藝/陶瓷/印刷/食品/成衣等相關工作者。
+                                                </label>
+                                                <label> <input class="form-check-input" type="radio" name="rg1"
+                                                        id="r2">秘書、文書處理事務人員、檔案管理人員、總機/出納/櫃台接待人員、訪談人員等。</label>
+
+
+                                                <label> <input class="form-check-input" type="radio" name="rg1"
+                                                        id="r2">農林漁牧業技術工作人員</label>
+
+
+                                                <label> <input class="form-check-input" type="radio" name="rg1"
+                                                        id="r3">服務及銷售工作人員</label>
+
+
+
+                                                <label> <input class="form-check-input" type="radio" name="rg1"
+                                                        id="r4">義務役、無兼職家庭主婦、退休及待業者等。</label>
+
+
+                                                <label> <input class="form-check-input" type="radio" name="rg1"
+                                                        id="r5">其他</label>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="input-box">
+                                            <label> <span class="required_text">*</span>請問一天吃哪幾餐？(可複選)</label>
+                                            <div class="form-control">
+                                                <label><input class="form-check-input" type="checkbox" name="cg1"
+                                                        id="c1" checked>早餐
+                                                </label>
+                                                <label> <input class="form-check-input" type="checkbox" name="cg1"
+                                                        id="c2">早上點心</label>
+
+
+                                                <label> <input class="form-check-input" type="checkbox" name="cg1"
+                                                        id="c2">午餐
+                                                </label>
+
+
+                                                <label> <input class="form-check-input" type="checkbox" name="cg1"
+                                                        id="c3">下午點心</label>
+
+
+
+                                                <label> <input class="form-check-input" type="checkbox" name="cg1"
+                                                        id="c4">宵夜</label>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="input-box">
+                                            <label> <span class="required_text">*</span> 您平均的睡眠時長？</label>
+                                            <div class="form-control">
+                                                <label><input class="form-check-input" type="radio" name="rg2" id="r5"
+                                                        checked>
+                                                    4小時以下
+                                                </label>
+                                                <label> <input class="form-check-input" type="radio" name="rg2"
+                                                        id="r6">4~6小時</label>
+
+
+                                                <label> <input class="form-check-input" type="radio" name="rg2"
+                                                        id="r7">6~7小時</label>
+
+
+                                                <label> <input class="form-check-input" type="radio" name="rg2"
+                                                        id="r8">7~8小時</label>
+
+
+
+                                                <label> <input class="form-check-input" type="radio" name="rg2"
+                                                        id="r9">8小時以上</label>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="input-box">
+                                            <label> <span class="required_text">*</span> 問題描述？</label>
+                                            <div class="form-control">
+                                                <label><input class="form-check-input" type="radio" name="rg3" id="r10"
+                                                        checked>選項1</label>
+                                                <label> <input class="form-check-input" type="radio" name="rg3"
+                                                        id="r11">選項2</label>
+                                                <label> <input class="form-check-input" type="radio" name="rg3"
+                                                        id="r12">選項3</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="input-box">
+                                            <label> <span class="required_text">*</span>問題描述？(可複選)</label>
+                                            <div class="form-control">
+
+                                                <label> <input class="form-check-input" type="checkbox" name="cg2"
+                                                        id="c5">選項</label>
+
+
+                                                <label> <input class="form-check-input" type="checkbox" name="cg2"
+                                                        id="c6">選項
+                                                </label>
+
+
+                                                <label> <input class="form-check-input" type="checkbox" name="cg2"
+                                                        id="c7">選項</label>
+
+                                                <label><input class="form-check-input" type="checkbox" name="cg2"
+                                                        id="c8" checked>選項
+                                                </label>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="text-center py-3">
+                                    <button type="submit" class="btn btn-primary"
+                                        onclick="window.location.href='./member_page1.html'">
+                                        提交問卷<span>+</span>
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer_info">
+            <div class="footer_logo">
+                <a href="https://www.brillianskin.tw"><img src="./img/logo.png"
+                        alt="梵雅康健 Fanya Regenerative Health"></a>
+            </div>
+            <ul>
+                <li>
+                    <p class="line"><a target="_blank" href="https://line.me/ti/p/@abcdefg">@abcdefg</a>
+                    </p>
+                    <p class="tel"><a>02-12345678</a></p>
+                    <p class="mail"><a>abcdefg@gmail.com</a></p>
+                    <p class="add"><a>台北市○○區○○路○○號 ○樓</a></p>
+                    <div class="box_link">
+                        <a target="_blank" href="https://www.facebook.com/brilliantskin.2024 "><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a target="_blank" href="https://line.me/ti/p/@abcdefg"><i class="fa-brands fa-line"></i></a>
+                        <!-- <a target="_blank"  href="tel:02-12345678"><i
+                                class="fa-solid fa-video"></i></a> -->
+                        <!-- <a target="_blank" href="mailto:abcdefg@gmail.com"><i class="far fa-envelope"></i></a> -->
+                        <a class="me_tp_ig" target="_blank" href="https://www.instagram.com/abcdefg/ "><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <div class="copy">© 2025 Fanya Regenerative Health. All Rights Reserved.</div>
+
+    </footer>
+    <!-- 側邊浮動按鈕 -->
+    <div class="fix_ri">
+        <a href="https://line.me/ti/p/@abcdefg" target="_blank">
+            <img src="./img/line.png" alt="梵雅康健 Fanya Regenerative Health">
+        </a>
+        <a href="https://www.facebook.com/brilliantskin.2024" target="_blank">
+            <img src="./img/fb.png" alt="梵雅康健 Fanya Regenerative Health">
+        </a>
+        <a href="https://www.instagram.com/abcdefg/" target="_blank">
+            <img src="./img/ig.png" alt="梵雅康健 Fanya Regenerative Health">
+        </a>
+        <a href="tel:0212345678" target="_blank">
+            <img src="./img/tel.png" alt="梵雅康健 Fanya Regenerative Health">
+        </a>
+        <a href="https://maps.app.goo.gl/sW4xc3MXgT2hD1Fs6" target="_blank">
+            <img src="./img/add.png" alt="梵雅康健 Fanya Regenerative Health">
+        </a>
+
+    </div>
+
+
+    <button id="js-goTopBtn" href="#main" class="goTop-btn"><i class="bi bi-chevron-up"></i>
+        <span>TOP</span>
+    </button>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!--  swiper  11.2.8-->
+    <script src="./css/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/clamp.js"></script>
+    <!-- wow -->
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        $(function () {
+            new WOW().init();
+        })
+    </script>
+    <script>
+
+
+
+
+    </script>
+</body>
+
+</html>

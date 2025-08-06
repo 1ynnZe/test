@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>梵雅康健</title>
+    <link rel="icon" href="favicon.ico">
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="./css/bootstrap-icons.css">
+    <!-- font awesome 6.0.0 -->
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <!--  swiper 11.2.8-->
+    <link rel="stylesheet" href="./css/swiper@11/swiper-bundle.min.css" />
+    <!-- wow -->
+    <link rel="stylesheet" href="./css/animate.css">
+    <!-- custom bootstrap  -->
+    <link rel="stylesheet" href="./css/all.css">
+</head>
+
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg position-relative">
+            <div class="container justify-content-center">
+                <div class="col-auto">
+                    <!-- logo -->
+                    <a class="navbar-brand" href="./index.html">
+                        <img class="img-fluid" src='./img/logo.png'>
+                    </a>
+                </div>
+                <div class="navbar_list ms-auto">
+                    <!-- 手機版 漢堡選單btn -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="menu-burger"></div>
+                    </button>
+                    <div id="navbarNav" class="collapse navbar-collapse ">
+                        <!-- 主選單 -->
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a class="nav-link" href="./news.html">最新消息</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./service.html">服務介紹</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./team.html">醫療團隊</a>
+                            </li>
+                            <li class="navbar-nav_dropdown">
+                                <a class="nav-link" data-href="./treat.html">精選療程推薦</a><a class="m_dropdownBtn"><i
+                                        class="bi bi-chevron-down"></i></a>
+                                <div class="scroll-wrapper">
+                                    <ul class="scroll-wrapper_menu">
+                                        <li> <a href="./cases.html" class="nav-link">
+                                                實證案例</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a class="nav-link" href="./qa.html">常見問題</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./clinic.html">門診時間</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./product.html">醫美產品</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./member.html">會員專區</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./contact.html">聯絡我們</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main id="main">
+        <!-- 內頁banner  -->
+        <section>
+            <div class="container">
+                <div class="banner banblog">
+                    <div class="en">Clinic</div>
+                    <h5>門診時間</h5>
+                </div>
+            </div>
+        </section>
+        <!-- Page Content -->
+        <section class="clinic bg-light">
+            <div class="container">
+                <!-- 醫師 -->
+                <div class="row outter-box rp-box">
+                    <div class="col-12">
+                        <h5 class="appoint_tlt">醫師時間</h5>
+                    </div>
+                    <div class="col-12">
+                        <div class="schedule">
+                            <div id="clinicTable_d" class="table-responsive doctor">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>醫師時間</th>
+                                            <th>一</th>
+                                            <th>二</th>
+                                            <th>三</th>
+                                            <th>四</th>
+                                            <th>五</th>
+                                            <th>六</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>09:00-<br class="d-lg-none">12:00</td>
+
+                                            <td data-day="1" data-period="morning"></td>
+                                            <td data-day="2" data-period="morning"></td>
+                                            <td data-day="3" data-period="morning"></td>
+                                            <td data-day="4" data-period="morning"></td>
+                                            <td data-day="5" data-period="morning"></td>
+                                            <td data-day="6" data-period="morning"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>13:30-<br class="d-lg-none">17:00</td>
+
+                                            <td data-day="1" data-period="afternoon"></td>
+                                            <td data-day="2" data-period="afternoon"></td>
+                                            <td data-day="3" data-period="afternoon"></td>
+                                            <td data-day="4" data-period="afternoon"></td>
+                                            <td data-day="5" data-period="afternoon"></td>
+                                            <td data-day="6" data-period="afternoon"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>18:30-<br class="d-lg-none">21:00
+                                            </td>
+
+                                            <td data-day="1" data-period="night"></td>
+                                            <td data-day="2" data-period="night"></td>
+                                            <td data-day="3" data-period="night"></td>
+                                            <td data-day="4" data-period="night"></td>
+                                            <td data-day="5" data-period="night"></td>
+                                            <td data-day="6" data-period="night"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-12 text-end mt-5">
+                        <a href="./clinic_d_appoint.html" class="btn btn-primary">立即預約<span>+</span></a>
+                    </div>
+                </div>
+                <!--  療程 -->
+                <div class="row outter-box rp-box">
+                    <div class="col-12">
+                        <h5 class="appoint_tlt">療程時間</h5>
+                    </div>
+                    <div class="col-12">
+                        <div class="schedule">
+                            <div id="clinicTable_t" class="table-responsive treat">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>療程時間</th>
+                                            <th>一</th>
+                                            <th>二</th>
+                                            <th>三</th>
+                                            <th>四</th>
+                                            <th>五</th>
+                                            <th>六</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>09:00-<br class="d-lg-none">12:00</td>
+
+                                            <td data-day="1" data-period="morning"></td>
+                                            <td data-day="2" data-period="morning"></td>
+                                            <td data-day="3" data-period="morning"></td>
+                                            <td data-day="4" data-period="morning"></td>
+                                            <td data-day="5" data-period="morning"></td>
+                                            <td data-day="6" data-period="morning"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>13:30-<br class="d-lg-none">17:00</td>
+
+                                            <td data-day="1" data-period="afternoon"></td>
+                                            <td data-day="2" data-period="afternoon"></td>
+                                            <td data-day="3" data-period="afternoon"></td>
+                                            <td data-day="4" data-period="afternoon"></td>
+                                            <td data-day="5" data-period="afternoon"></td>
+                                            <td data-day="6" data-period="afternoon"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>18:30-<br class="d-lg-none">21:00
+                                            </td>
+
+                                            <td data-day="1" data-period="night"></td>
+                                            <td data-day="2" data-period="night"></td>
+                                            <td data-day="3" data-period="night"></td>
+                                            <td data-day="4" data-period="night"></td>
+                                            <td data-day="5" data-period="night"></td>
+                                            <td data-day="6" data-period="night"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-12 text-end mt-5">
+                        <a href="./clinic_t_appoint.html" class="btn btn-primary">立即預約<span>+</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer_info">
+            <div class="footer_logo">
+                <a href="https://www.brillianskin.tw"><img src="./img/logo.png"
+                        alt="梵雅康健 Fanya Regenerative Health"></a>
+            </div>
+            <ul>
+                <li>
+                    <p class="line"><a target="_blank" href="https://line.me/ti/p/@abcdefg">@abcdefg</a>
+                    </p>
+                    <p class="tel"><a>02-12345678</a></p>
+                    <p class="mail"><a>abcdefg@gmail.com</a></p>
+                    <p class="add"><a>台北市○○區○○路○○號 ○樓</a></p>
+                    <div class="box_link">
+                        <a target="_blank" href="https://www.facebook.com/brilliantskin.2024 "><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a target="_blank" href="https://line.me/ti/p/@abcdefg"><i class="fa-brands fa-line"></i></a>
+                        <!-- <a target="_blank"  href="tel:02-12345678"><i
+                                class="fa-solid fa-video"></i></a> -->
+                        <!-- <a target="_blank" href="mailto:abcdefg@gmail.com"><i class="far fa-envelope"></i></a> -->
+                        <a class="me_tp_ig" target="_blank" href="https://www.instagram.com/abcdefg/ "><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <div class="copy">© 2025 Fanya Regenerative Health. All Rights Reserved.</div>
+
+    </footer>
+    <!-- 側邊浮動按鈕 -->
+    <div class="fix_ri">
+        <a href="https://line.me/ti/p/@abcdefg" target="_blank">
+            <img src="./img/line.png" alt="梵雅康健 Fanya Regenerative Health">
+        </a>
+        <a href="https://www.facebook.com/brilliantskin.2024" target="_blank">
+            <img src="./img/fb.png" alt="梵雅康健 Fanya Regenerative Health">
+        </a>
+        <a href="https://www.instagram.com/abcdefg/" target="_blank">
+            <img src="./img/ig.png" alt="梵雅康健 Fanya Regenerative Health">
+        </a>
+        <a href="tel:0212345678" target="_blank">
+            <img src="./img/tel.png" alt="梵雅康健 Fanya Regenerative Health">
+        </a>
+        <a href="https://maps.app.goo.gl/sW4xc3MXgT2hD1Fs6" target="_blank">
+            <img src="./img/add.png" alt="梵雅康健 Fanya Regenerative Health">
+        </a>
+
+    </div>
+
+
+    <button id="js-goTopBtn" href="#main" class="goTop-btn"><i class="bi bi-chevron-up"></i>
+        <span>TOP</span>
+    </button>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!--  swiper  11.2.8-->
+    <script src="./css/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/clamp.js"></script>
+    <!-- wow -->
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        $(function () {
+            new WOW().init();
+        })
+    </script>
+    <script>
+        $(function () {
+
+            //(模擬資料) 固定班表
+            const doctorTimeData = {
+                1: { // 星期一
+                    morning: ["許茗鈞"],
+                    afternoon: ["吳若薇"],
+                    night: ["胡怡萱"]
+                },
+                2: { // 星期二
+                    morning: [""],
+                    afternoon: ["吳若薇"],
+                    night: ["胡怡萱"]
+                },
+                3: {// 星期三
+                    morning: ["許茗鈞"],
+                    afternoon: [""],
+                    night: ["胡怡萱"]
+                },
+                4: {// 星期四
+                    morning: [""],
+                    afternoon: ["王大明"],
+                    night: [""]
+                },
+                5: {// 星期五
+                    morning: ["吳若薇"],
+                    afternoon: [""],
+                    night: ["胡怡萱"]
+                },
+                6: {// 星期六
+                    morning: ["吳若薇"],
+                    afternoon: ["許茗鈞"],
+                },
+
+            };
+
+
+            // 顏色範本
+            const doctorColors = {
+                "許茗鈞": "#4A90E2",
+                "吳若薇": "#82eba1",
+                "胡怡萱": "#F5A623",
+                "劉人鳳": "#FF5FC0",
+                "王大明": "#795fff",
+            };
+
+            $('#clinicTable_d td[data-day]').each(function () {
+                const day = $(this).data('day');
+                const period = $(this).data('period');
+                const doctors = doctorTimeData[day]?.[period] || [];
+
+                doctors.forEach(name => {
+                    const color = doctorColors[name] || "#000";
+                    $(this).append(`<div style="color:${color}">${name}</div>`);
+                });
+            });
+
+
+
+
+            // 模擬資料
+            const treatTimeData = {
+                1: { // 星期一
+                    morning: ["EECP 體外反搏療程"],
+                    afternoon: [""],
+                    night: [""]
+                },
+                2: { // 星期二
+                    morning: [""],
+                    afternoon: ["K2 血液淨化療程"],
+                    night: [""]
+                },
+                3: {// 星期三
+                    morning: ["代謝優化與體重管理"],
+                    afternoon: [""],
+                    night: ["外泌體水光針美容課程"]
+                },
+                4: {// 星期四
+                    morning: [""],
+                    afternoon: ["代謝優化與體重管理"],
+                    night: [""]
+                },
+                5: {// 星期五
+                    morning: ["K2 血液淨化療程"],
+                    afternoon: [""],
+                    night: ["外泌體水光針美容課程"]
+                },
+                6: {// 星期六
+                    morning: [""],
+                    afternoon: ["ILIB 氦氖靜脈雷射"],
+                },
+
+            };
+
+            // 顏色範本
+            const treatColors = {
+                "EECP 體外反搏療程": "#4A90E2",
+                "K2 血液淨化療程": "#82eba1",
+                "ILIB 氦氖靜脈雷射": "#F5A623",
+                "代謝優化與體重管理": "#FF5FC0",
+                "外泌體水光針美容課程": "#795fff",
+            };
+
+            $('#clinicTable_t td[data-day]').each(function () {
+                const day = $(this).data('day');
+                const period = $(this).data('period');
+                const doctors = treatTimeData[day]?.[period] || [];
+
+                doctors.forEach(name => {
+                    const color = treatColors[name] || "#000";
+                    $(this).append(`<div style="color:${color}">${name}</div>`);
+                });
+            });
+
+        })
+
+
+    </script>
+</body>
+
+</html>

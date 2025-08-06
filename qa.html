@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>梵雅康健</title>
+    <link rel="icon" href="favicon.ico">
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="./css/bootstrap-icons.css">
+    <!-- font awesome 6.0.0 -->
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <!--  swiper 11.2.8-->
+    <link rel="stylesheet" href="./css/swiper@11/swiper-bundle.min.css" />
+    <!-- wow -->
+    <link rel="stylesheet" href="./css/animate.css">
+    <!-- custom bootstrap  -->
+    <link rel="stylesheet" href="./css/all.css">
+</head>
+
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg position-relative">
+            <div class="container justify-content-center">
+                <div class="col-auto">
+                    <!-- logo -->
+                    <a class="navbar-brand" href="./index.html">
+                        <img class="img-fluid" src='./img/logo.png'>
+                    </a>
+                </div>
+                <div class="navbar_list ms-auto">
+                    <!-- 手機版 漢堡選單btn -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="menu-burger"></div>
+                    </button>
+                    <div id="navbarNav" class="collapse navbar-collapse ">
+                        <!-- 主選單 -->
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a class="nav-link" href="./news.html">最新消息</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./service.html">服務介紹</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./team.html">醫療團隊</a>
+                            </li>
+                            <li class="navbar-nav_dropdown">
+                                <a class="nav-link" data-href="./treat.html">精選療程推薦</a><a class="m_dropdownBtn"><i
+                                        class="bi bi-chevron-down"></i></a>
+                                <div class="scroll-wrapper">
+                                    <ul class="scroll-wrapper_menu">
+                                        <li> <a href="./cases.html" class="nav-link">
+                                                實證案例</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a class="nav-link" href="./qa.html">常見問題</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./clinic.html">門診時間</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./product.html">醫美產品</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./member.html">會員專區</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./contact.html">聯絡我們</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main id="main">
+        <!-- 內頁banner  -->
+        <section>
+            <div class="container">
+                <div class="banner banblog">
+                    <div class="en">FAQs</div>
+                    <h5>常見問題</h5>
+                </div>
+            </div>
+        </section>
+        <!-- Page Content -->
+        <section class="pb-5">
+            <div class="container">
+
+                <div class="row outter-box">
+                    <!-- 側邊分類 -->
+                    <div class="col-lg-auto sideblog wow fadeInLeft" data-wow-duration="3s">
+                        <h5 class="blog_le_t"><em>問題分類</em><span>FAQs</span></h5>
+                        <!-- 搜尋 -->
+                        <div class="blog_search">
+                            <form action="" method="get">
+                                <input type="search" name="" value="" placeholder="問題搜尋">
+                                <input type="submit" name="" id="" value="">
+                            </form>
+                        </div>
+
+                        <!-- 分類 -->
+                        <!-- <button data-bs-toggle="collapse" href="#collapseSide" role="button" aria-expanded="false"
+                            aria-controls="collapseSide" class="d-lg-none btn accordion-btn my-3">
+                            <span>全部展開</span>
+                            <span class="arrow-down"></span>
+                        </button> -->
+                        <ul id="collapseSide" class="accordion">
+                            <li class="accordion_item active">
+                                <a href="#">療程須知</a>
+
+                            </li>
+                            <li class="accordion_item">
+                                <a href="#">安全疑慮</a>
+                            </li>
+                            <li class="accordion_item">
+                                <a href="#">預約流程</a>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg listblog_outter wow fadeIn" data-wow-duration="3s">
+                        <!-- QA列表 -->
+                        <div class="accordion faq-list" id="accordion-list">
+                            <div class="accordion-item">
+                                <a class="accordion-header" data-bs-toggle="collapse" data-bs-target="#Q1"
+                                    aria-expanded="false" aria-controls="Q1">
+                                    <span class="q">Q</span>
+                                    <p>
+                                        在梵雅看診的費用大概要多少錢？
+                                    </p>
+                                    <span class="arrow-down"></span>
+
+                                </a>
+                                <div id="Q1" class="accordion-collapse collapse" data-bs-parent="#accordion-list">
+                                    <div class="p-3">
+                                        <p>2024年4月1日起，為反應各項成本及維持優質的醫療服務，本院將調整掛號費至300元。
+                                            <br>
+                                            【若需要超音波檢查或是自費檢驗項目會另有費用產生，本所同仁在現場會另外為您說明】
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <a class="accordion-header" data-bs-toggle="collapse" data-bs-target="#Q2"
+                                    aria-expanded="false" aria-controls="Q2">
+                                    <span class="q">Q</span>
+                                    <p>
+                                        可以刷卡付款嗎?
+                                    </p>
+                                    <span class="arrow-down"></span>
+
+                                </a>
+                                <div id="Q2" class="accordion-collapse collapse" data-bs-parent="#accordion-list">
+                                    <div class="p-3">
+                                        <p>2024年4月1日起，為反應各項成本及維持優質的醫療服務，本院將調整掛號費至300元。
+                                            <br>
+                                            【若需要超音波檢查或是自費檢驗項目會另有費用產生，本所同仁在現場會另外為您說明】
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <a class="accordion-header" data-bs-toggle="collapse" data-bs-target="#Q3"
+                                    aria-expanded="false" aria-controls="Q3">
+                                    <span class="q">Q</span>
+                                    <p>
+                                        初診可以線上掛號嗎?
+                                    </p>
+                                    <span class="arrow-down"></span>
+
+                                </a>
+                                <div id="Q3" class="accordion-collapse collapse" data-bs-parent="#accordion-list">
+                                    <div class="p-3">
+                                        <p>2024年4月1日起，為反應各項成本及維持優質的醫療服務，本院將調整掛號費至300元。
+                                            <br>
+                                            【若需要超音波檢查或是自費檢驗項目會另有費用產生，本所同仁在現場會另外為您說明】
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <a class="accordion-header" data-bs-toggle="collapse" data-bs-target="#Q4"
+                                    aria-expanded="false" aria-controls="Q4">
+                                    <span class="q">Q</span>
+                                    <p>
+                                        看診最早及最晚報到的時間是什麼時候？
+                                    </p>
+                                    <span class="arrow-down"></span>
+
+                                </a>
+                                <div id="Q4" class="accordion-collapse collapse" data-bs-parent="#accordion-list">
+                                    <div class="p-3">
+                                        <p>2024年4月1日起，為反應各項成本及維持優質的醫療服務，本院將調整掛號費至300元。
+                                            <br>
+                                            【若需要超音波檢查或是自費檢驗項目會另有費用產生，本所同仁在現場會另外為您說明】
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <a class="accordion-header" data-bs-toggle="collapse" data-bs-target="#Q5"
+                                    aria-expanded="false" aria-controls="Q5">
+                                    <span class="q">Q</span>
+                                    <p>
+                                        如果忘記帶健保卡，可以看診嗎?
+                                    </p>
+                                    <span class="arrow-down"></span>
+
+                                </a>
+                                <div id="Q5" class="accordion-collapse collapse" data-bs-parent="#accordion-list">
+                                    <div class="p-3">
+                                        <p>2024年4月1日起，為反應各項成本及維持優質的醫療服務，本院將調整掛號費至300元。
+                                            <br>
+                                            【若需要超音波檢查或是自費檢驗項目會另有費用產生，本所同仁在現場會另外為您說明】
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <a class="accordion-header" data-bs-toggle="collapse" data-bs-target="#Q6"
+                                    aria-expanded="false" aria-controls="Q6">
+                                    <span class="q">Q</span>
+                                    <p>
+                                        其他問題
+                                    </p>
+                                    <span class="arrow-down"></span>
+
+                                </a>
+                                <div id="Q6" class="accordion-collapse collapse" data-bs-parent="#accordion-list">
+                                    <div class="p-3">
+                                        <p>2024年4月1日起，為反應各項成本及維持優質的醫療服務，本院將調整掛號費至300元。
+                                            <br>
+                                            【若需要超音波檢查或是自費檢驗項目會另有費用產生，本所同仁在現場會另外為您說明】
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <a class="accordion-header" data-bs-toggle="collapse" data-bs-target="#Q7"
+                                    aria-expanded="false" aria-controls="Q7">
+                                    <span class="q">Q</span>
+                                    <p>
+                                        其他問題
+                                    </p>
+                                    <span class="arrow-down"></span>
+
+                                </a>
+                                <div id="Q7" class="accordion-collapse collapse" data-bs-parent="#accordion-list">
+                                    <div class="p-3">
+                                        <p>2024年4月1日起，為反應各項成本及維持優質的醫療服務，本院將調整掛號費至300元。
+                                            <br>
+                                            【若需要超音波檢查或是自費檢驗項目會另有費用產生，本所同仁在現場會另外為您說明】
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <a class="accordion-header" data-bs-toggle="collapse" data-bs-target="#Q8"
+                                    aria-expanded="false" aria-controls="Q8">
+                                    <span class="q">Q</span>
+                                    <p>
+                                        其他問題
+                                    </p>
+                                    <span class="arrow-down"></span>
+
+                                </a>
+                                <div id="Q8" class="accordion-collapse collapse" data-bs-parent="#accordion-list">
+                                    <div class="p-3">
+                                        <p>2024年4月1日起，為反應各項成本及維持優質的醫療服務，本院將調整掛號費至300元。
+                                            <br>
+                                            【若需要超音波檢查或是自費檢驗項目會另有費用產生，本所同仁在現場會另外為您說明】
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- 頁碼 -->
+                        <nav class="my-5" aria-label="Page navigation">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-itemm disabled">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <i class="bi bi-chevron-left"></i>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <i class="bi bi-chevron-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer_info">
+            <div class="footer_logo">
+                <a href="https://www.brillianskin.tw"><img src="./img/logo.png"
+                        alt="梵雅康健 Fanya Regenerative Health"></a>
+            </div>
+            <ul>
+                <li>
+                    <p class="line"><a target="_blank" href="https://line.me/ti/p/@abcdefg">@abcdefg</a>
+                    </p>
+                    <p class="tel"><a>02-12345678</a></p>
+                    <p class="mail"><a>abcdefg@gmail.com</a></p>
+                    <p class="add"><a>台北市○○區○○路○○號 ○樓</a></p>
+                    <div class="box_link">
+                        <a target="_blank" href="https://www.facebook.com/brilliantskin.2024 "><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a target="_blank" href="https://line.me/ti/p/@abcdefg"><i class="fa-brands fa-line"></i></a>
+                        <!-- <a target="_blank"  href="tel:02-12345678"><i
+                                class="fa-solid fa-video"></i></a> -->
+                        <!-- <a target="_blank" href="mailto:abcdefg@gmail.com"><i class="far fa-envelope"></i></a> -->
+                        <a class="me_tp_ig" target="_blank" href="https://www.instagram.com/abcdefg/ "><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <div class="copy">© 2025 Fanya Regenerative Health. All Rights Reserved.</div>
+
+    </footer>
+    <!-- 側邊浮動按鈕 -->
+    <div class="fix_ri">
+        <a href="https://line.me/ti/p/@abcdefg" target="_blank">
+            <img src="./img/line.png" alt="梵雅康健 Fanya Regenerative Health">
+        </a>
+        <a href="https://www.facebook.com/brilliantskin.2024" target="_blank">
+            <img src="./img/fb.png" alt="梵雅康健 Fanya Regenerative Health">
+        </a>
+        <a href="https://www.instagram.com/abcdefg/" target="_blank">
+            <img src="./img/ig.png" alt="梵雅康健 Fanya Regenerative Health">
+        </a>
+        <a href="tel:0212345678" target="_blank">
+            <img src="./img/tel.png" alt="梵雅康健 Fanya Regenerative Health">
+        </a>
+        <a href="https://maps.app.goo.gl/sW4xc3MXgT2hD1Fs6" target="_blank">
+            <img src="./img/add.png" alt="梵雅康健 Fanya Regenerative Health">
+        </a>
+
+    </div>
+
+
+    <button id="js-goTopBtn" href="#main" class="goTop-btn"><i class="bi bi-chevron-up"></i>
+        <span>TOP</span>
+    </button>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!--  swiper  11.2.8-->
+    <script src="./css/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/clamp.js"></script>
+    <!-- wow -->
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        $(function () {
+            new WOW().init();
+        })
+    </script>
+    <script>
+
+
+
+
+    </script>
+</body>
+
+</html>

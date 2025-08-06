@@ -9786,28 +9786,6 @@ ul {
   padding: 0;
 }
 
-html {
-  height: 100%;
-  scroll-snap-type: y mandatory;
-  scroll-padding-top: 77px;
-  scroll-behavior: smooth;
-  scroll-behavior: smooth;
-}
-
-.js-scroll {
-  scroll-snap-align: start;
-  min-height: 100vh;
-}
-
-@media (min-width: 992px) {
-  .js-scroll {
-    min-height: 100vh;
-  }
-}
-footer {
-  scroll-snap-align: start;
-}
-
 body {
   margin: 0;
   background-color: #EEEFEA;

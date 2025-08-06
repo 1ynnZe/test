@@ -17,6 +17,38 @@
     <link rel="stylesheet" href="./css/animate.css">
     <!-- custom bootstrap  -->
     <link rel="stylesheet" href="./css/all.css">
+
+    <style>
+        /* 只有首頁 */
+
+        html {
+            height: calc(100vh - 0px);
+            scroll-snap-type: y mandatory;
+            scroll-padding-top: 77px;
+            scroll-margin-top: 77px;
+            scroll-behavior: smooth;
+        }
+
+
+        .sc-snap {
+            scroll-snap-align: start;
+            min-height: calc(100vh - 77px);
+        }
+
+        @media (max-width:992px) {
+            .sc-snap:first-child {
+                min-height: 200px;
+            }
+
+        }
+
+        footer {
+            scroll-snap-align: start;
+        }
+    </style>
+
+
+
 </head>
 
 
@@ -82,9 +114,9 @@
         </nav>
 
     </header>
-    <main id="main">
+    <main id="main" class="sections-container">
         <!-- banner -->
-        <section class="js-scroll">
+        <section class="sc-snap" id="sec1">
             <!-- banner輪播 -->
             <div id="carouselBanner" class="carousel slide carousel-fade " data-bs-ride="carousel"
                 data-bs-ride="carousel" data-bs-pause="false" data-bs-interval="4000">
@@ -105,7 +137,7 @@
             </div>
         </section>
         <!-- 精選療程推薦 -->
-        <section class="rt js-scroll">
+        <section class="rt sc-snap" id="sec2">
             <div class="container  py-lg-5">
                 <div class="outter-box">
                     <div class="title_i_box wow fadeInDown" data-wow-duration="2s">
@@ -154,7 +186,7 @@
                 </div>
         </section>
         <!-- 最新公告 -->
-        <section class="js-scroll">
+        <section class="sc-snap" id="sec3">
             <div class="container py-lg-5">
                 <div class="outter-box ">
                     <div class="title_i_box wow fadeInDown" data-wow-duration="2s">
@@ -204,7 +236,7 @@
             </div>
         </section>
         <!-- 關於梵雅 -->
-        <section class="ab js-scroll">
+        <section class="ab sc-snap" id="sec4">
             <img class="bg-logo img-fluid" src="./img/logo_Gray.png" alt="梵雅康健 Fanya Regenerative Health">
             <div class="container-fluid px-md-5 py-3">
                 <div class="row ">
@@ -253,7 +285,7 @@
             </div>
         </section>
         <!-- 關於梵雅2 -->
-        <section class="ab2 js-scroll ">
+        <section class="ab2 sc-snap " id="sec5">
             <div class="container py-5">
                 <div class="row justify-content-center align-items-center py-5">
                     <div class="col-lg-4">
@@ -291,7 +323,7 @@
             </div>
         </section>
         <!-- 醫療團隊 -->
-        <section class="js-scroll">
+        <section class="sc-snap" id="sec6">
             <div class="container py-5">
                 <div class="outter-box">
                     <div class="title_i_box wow fadeInDown" data-wow-duration="2s">
@@ -412,38 +444,14 @@
     <script src="./js/clamp.js"></script>
     <!-- wow -->
     <script src="./js/wow.min.js"></script>
-
-
     <script src="./js/main.js"></script>
     <script>
-
-
         $(function () {
-            if ($(window).width() > 992) {
-                   let lastScrollTop = 0, delta = 5;
-            $(window).scroll(function () {
-                var nowScrollTop = $(this).scrollTop();
-                if (Math.abs(lastScrollTop - nowScrollTop) >= delta) {
-                    if (nowScrollTop > lastScrollTop) {
-                        // 下滾
-                        console.log("向下滾")
-                    } else {
-                        // 上滾
-                        $(window).scrollTop($(window).scrollTop() - 40);
-
-                    }
-                    lastScrollTop = nowScrollTop;
-                }
-            });
-            }
             new WOW().init();
-
-         
-
         })
 
     </script>
 </body>
-
+</body>
 
 </html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>梵雅康健</title>
+    <link rel="icon" href="favicon.ico">
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="./css/bootstrap-icons.css">
+    <!-- font awesome 6.0.0 -->
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <!--  swiper 11.2.8-->
+    <link rel="stylesheet" href="./css/swiper@11/swiper-bundle.min.css" />
+    <!-- wow -->
+    <link rel="stylesheet" href="./css/animate.css">
+    <!-- custom bootstrap  -->
+    <link rel="stylesheet" href="./css/all.css">
+</head>
+
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg position-relative">
+            <div class="container justify-content-center">
+                <div class="col-auto">
+                    <!-- logo -->
+                    <a class="navbar-brand" href="./index.html">
+                        <img class="img-fluid" src='./img/logo.png'>
+                    </a>
+                </div>
+                <div class="navbar_list ms-auto">
+                    <!-- 手機版 漢堡選單btn -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="menu-burger"></div>
+                    </button>
+                    <div id="navbarNav" class="collapse navbar-collapse ">
+                        <!-- 主選單 -->
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a class="nav-link" href="./news.html">最新消息</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./service.html">服務介紹</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./team.html">醫療團隊</a>
+                            </li>
+                            <li class="navbar-nav_dropdown">
+                                <a class="nav-link" data-href="./treat.html">精選療程推薦</a><a class="m_dropdownBtn"><i
+                                        class="bi bi-chevron-down"></i></a>
+                                <div class="scroll-wrapper">
+                                    <ul class="scroll-wrapper_menu">
+                                        <li> <a href="./cases.html" class="nav-link">
+                                                實證案例</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a class="nav-link" href="./qa.html">常見問題</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./clinic.html">門診時間</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./product.html">醫美產品</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./member.html">會員專區</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./contact.html">聯絡我們</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main id="main">
+        <!-- 內頁banner  -->
+        <section>
+            <div class="container">
+                <div class="banner banblog">
+                    <div class="en">Contact</div>
+                    <h5>聯絡我們</h5>
+                </div>
+            </div>
+        </section>
+        <!-- Page Content -->
+        <section class="contact wow fadeIn" data-wow-duration="2s">
+            <h4><span class="en">information</span>診所資訊</h4>
+            <div class="container">
+                <div class="row justify-content-center wow fadeIn" data-wow-duration="3s">
+                    <div class="col-lg-4 px-5 px-lg-0">
+                        <div class="imgLogo"><img src="./img/logo.png" alt="" class="img-fluid"></div>
+
+                        <p>
+                            <i class="fa-solid fa-location-dot me-3"></i>台北市中山區南京東路三段118號2樓<br>
+                        </p>
+                        <p><i class="fas fa-solid fa-phone me-3"></i>(02)2505-7958
+                        </p>
+                        <p><i class="fa-solid fa-envelope"></i> abcdefg@gmail.com
+                        </p>
+                        <p><i class="fa-brands fa-line me-3"></i><a
+                                href="https://line.me/R/ti/p/@676fjbud?oat__id=3039382" target="_blank">@LJDC</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-8 row gx-0">
+                        <div class="col-xl-auto">
+                            <div class="form-card pe-lg-4 py-4 wow fadeIn" data-wow-duration="3s" data-wow-delay=".3s">
+                                <form action="">
+                                    <div class="">
+                                        <div class="input-box co1-12">
+                                            <input placeholder="姓名" type="text" class="form-control" name="" value="">
+                                        </div>
+                                        <div class="input-box co1-12">
+                                            <input placeholder="電話" type="text" class="form-control" name="" value="">
+                                        </div>
+                                        <div class="input-box co1-12">
+                                            <input placeholder="信箱" type="email" required class="form-control" name=""
+                                                value="">
+                                        </div>
+                                        <div class="input-box co1-12">
+                                            <select class="form-select" id="select_treat" required>
+                                                <option selected value="" disabled>療程選擇</option>
+                                                <option value="">EECP 體外反搏療程</option>
+                                                <option value="">K2 血液淨化療程</option>
+                                                <option value="">ILIB 氦氖靜脈雷射</option>
+                                                <option value="">代謝優化與體重管理</option>
+                                                <option value="">外泌體水光針美容課程</option>
+                                            </select>
+                                        </div>
+                                        <div class="text-center py-3">
+                                            <button type="submit" onclick="window.location.href='./member_page1.html'"
+                                                class="btn btn-secondary">
+                                                確認<span>+</span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-xl">
+                            <div class="imgBox wow fadeIn" data-wow-duration="3s" data-wow-delay=".5s">
+                                <img class="img-fluid" src="./img/box-img4.png" alt="">
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row py-md-5 ">
+                    <div class="col-12 text-center py-5">
+                        <a class="btn btn-primary  wow fadeInRight mx-md-4 mx-0 my-2 " data-wow-delay=".5s"
+                            data-wow-duration="2s" href="./member.html" target="_blank">會員專區<span>+</span></a>
+                        <a class="btn btn-primary wow  fadeInRight  mx-md-4 mx-0 my-2 " data-wow-delay=".5s"
+                            data-wow-duration="2s" href="tel:0212345678">撥打電話<span>+</span></a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d115689.38807173911!2d121.52197900000002!3d25.024116!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a98c22c61da1%3A0xce28e6a048b0b35d!2z5Lqu5pm055qu6Iaa5bCI56eR6Ki65omA!5e0!3m2!1szh-TW!2stw!4v1753407672372!5m2!1szh-TW!2stw"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer_info">
+            <div class="footer_logo">
+                <a href="https://www.brillianskin.tw"><img src="./img/logo.png"
+                        alt="梵雅康健 Fanya Regenerative Health"></a>
+            </div>
+            <ul>
+                <li>
+                    <p class="line"><a target="_blank" href="https://line.me/ti/p/@abcdefg">@abcdefg</a>
+                    </p>
+                    <p class="tel"><a>02-12345678</a></p>
+                    <p class="mail"><a>abcdefg@gmail.com</a></p>
+                    <p class="add"><a>台北市○○區○○路○○號 ○樓</a></p>
+                    <div class="box_link">
+                        <a target="_blank" href="https://www.facebook.com/brilliantskin.2024 "><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a target="_blank" href="https://line.me/ti/p/@abcdefg"><i class="fa-brands fa-line"></i></a>
+                        <!-- <a target="_blank"  href="tel:02-12345678"><i
+                                class="fa-solid fa-video"></i></a> -->
+                        <!-- <a target="_blank" href="mailto:abcdefg@gmail.com"><i class="far fa-envelope"></i></a> -->
+                        <a class="me_tp_ig" target="_blank" href="https://www.instagram.com/abcdefg/ "><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <div class="copy">© 2025 Fanya Regenerative Health. All Rights Reserved.</div>
+
+    </footer>
+    <!-- 側邊浮動按鈕 -->
+    <div class="fix_ri">
+        <a href="https://line.me/ti/p/@abcdefg" target="_blank">
+            <img src="./img/line.png" alt="梵雅康健 Fanya Regenerative Health">
+        </a>
+        <a href="https://www.facebook.com/brilliantskin.2024" target="_blank">
+            <img src="./img/fb.png" alt="梵雅康健 Fanya Regenerative Health">
+        </a>
+        <a href="https://www.instagram.com/abcdefg/" target="_blank">
+            <img src="./img/ig.png" alt="梵雅康健 Fanya Regenerative Health">
+        </a>
+        <a href="tel:0212345678" target="_blank">
+            <img src="./img/tel.png" alt="梵雅康健 Fanya Regenerative Health">
+        </a>
+        <a href="https://maps.app.goo.gl/sW4xc3MXgT2hD1Fs6" target="_blank">
+            <img src="./img/add.png" alt="梵雅康健 Fanya Regenerative Health">
+        </a>
+
+    </div>
+
+
+    <button id="js-goTopBtn" href="#main" class="goTop-btn"><i class="bi bi-chevron-up"></i>
+        <span>TOP</span>
+    </button>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!--  swiper  11.2.8-->
+    <script src="./css/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/clamp.js"></script>
+    <!-- wow -->
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        $(function () {
+            new WOW().init();
+        })
+    </script>
+    <script>
+
+
+
+
+    </script>
+</body>
+
+</html>
