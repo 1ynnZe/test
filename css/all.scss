@@ -221,7 +221,11 @@ ul {
 }
 
 
+html,
+body {
+  overflow-x: hidden !important;
 
+}
 
 body {
   margin: 0;
@@ -243,7 +247,6 @@ main {
   margin-top: 75px;
 
   .container {
-    width: 100%;
     max-width: 1200px;
     margin: auto;
     padding: 0px 20px;
@@ -252,14 +255,10 @@ main {
 
 
 
-@media (min-width:992px) {
+@media (min-width:1300px) {
   main {
-
     .container {
-      width: 100%;
-      max-width: 1200px;
-      margin: auto;
-      padding: 0px 20px;
+      width: 1200px;
     }
   }
 
@@ -992,16 +991,7 @@ section.ab {
   }
 }
 
-section.ab2:not(.section) {
-  padding: 400px 0;
 
-  .container {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -0%);
-
-  }
-}
 
 section.ab2 {
   // background-color: #f5f1df;
@@ -1055,7 +1045,37 @@ section.ab2 {
 
 }
 
+section.ab2:not(.section) {
+  padding: 400px 0;
 
+  .container {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -0%);
+
+  }
+}
+
+@media (max-width: 992px) {
+  section.ab2:not(.section) {
+    padding: 0;
+    min-height: 600px;
+
+    .s {
+      top: auto;
+      bottom: 0;
+      transform: translate(-50%, -50%);
+    }
+
+    .container {}
+
+    .box-img3 img {
+      width: 90%;
+    }
+  }
+
+
+}
 
 .bg-logo {
   position: absolute;

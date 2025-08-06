@@ -14,7 +14,11 @@
     <!--  swiper 11.2.8-->
     <link rel="stylesheet" href="./css/swiper@11/swiper-bundle.min.css" />
     <!-- wow -->
-    <link rel="stylesheet" href="./css/animate.css">
+    <!-- <link rel="stylesheet" href="./css/animate.css"> -->
+
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
     <!-- custom bootstrap  -->
     <link rel="stylesheet" href="./css/all.css">
 
@@ -42,8 +46,9 @@
 
         }
 
-        footer {
+        footer.sc-snap {
             scroll-snap-align: start;
+            min-height: auto;
         }
     </style>
 
@@ -114,7 +119,7 @@
         </nav>
 
     </header>
-    <main id="main" class="sections-container">
+    <main id="main">
         <!-- banner -->
         <section class="sc-snap" id="sec1">
             <!-- banner輪播 -->
@@ -140,7 +145,8 @@
         <section class="rt sc-snap" id="sec2">
             <div class="container  py-lg-5">
                 <div class="outter-box">
-                    <div class="title_i_box wow fadeInDown" data-wow-duration="2s">
+                    <div class="title_i_box wow fadeInDown" data-wow-duration="2s" data-aos="fade-down"
+                        data-aos-duration="2000">
                         <h6>Recommended Treatment</h6>
                         <h4>精選療程推薦</h4>
                     </div>
@@ -189,12 +195,14 @@
         <section class="sc-snap" id="sec3">
             <div class="container py-lg-5">
                 <div class="outter-box ">
-                    <div class="title_i_box wow fadeInDown" data-wow-duration="2s">
+                    <div class="title_i_box wow fadeInDown" data-wow-duration="2s" data-aos="fade-down"
+                        data-aos-duration="2000">
                         <h6>NEWS</h6>
                         <h4>最新消息</h4>
                     </div>
 
-                    <div class="news_list wow fadeInRight" data-wow-duration="3s">
+                    <div class="news_list wow fadeInRight" data-wow-duration="3s" data-aos="fade-right"
+                        data-aos-duration="3000">
                         <ul>
                             <li>
                                 <a href="./news_page.html">
@@ -230,6 +238,7 @@
                     </div>
                     <div class="text-center mt-5">
                         <a class="btn btn-primary wow fadeInLeft" data-wow-duration="3s" data-wow-delay=".3s"
+                            data-aos="fade-left" data-aos-duration="2000" data-aos-delay="300"
                             href="./news.html">查看更多<span>+</span></a>
                     </div>
                 </div>
@@ -241,12 +250,14 @@
             <div class="container-fluid px-md-5 py-3">
                 <div class="row ">
                     <div class="col-lg-4 col-6 order-2 order-xl-0">
-                        <div class="box-img box-img1 wow fadeInLeft" data-wow-duration="2s">
+                        <div class="box-img box-img1 wow fadeInLeft" data-wow-duration="2s" data-aos="fade-left"
+                            data-aos-duration="2000">
                             <img class="img-fluid" src="./img/box-img1.png" alt="梵雅康健 Fanya Regenerative Health">
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="box-1  title-a wow fadeInUp" data-wow-duration="2s">
+                        <div class="box-1  title-a wow fadeInUp" data-wow-duration="2s" data-aos="fade-up"
+                            data-aos-duration="2000">
                             <h4>關於梵雅<span>About Us</span></h4>
                             <div class="desc">
                                 <span class="title-b">淨化循環，啟動年輕自癒力<br>
@@ -258,7 +269,8 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-6 text-end  order-3">
-                        <div class="box-img box-img2 wow fadeInRight" data-wow-duration="2s">
+                        <div class="box-img box-img2 wow fadeInRight" data-wow-duration="2s" data-aos="fade-right"
+                            data-aos-duration="2000">
                             <img class="img-fluid" src="./img/box-img2.png" alt="梵雅康健 Fanya Regenerative Health">
                         </div>
                     </div>
@@ -267,7 +279,8 @@
 
                 <div class="row  justify-content-center">
                     <div class="col-lg-4">
-                        <div class="box-2 title-a wow fadeInUp" data-wow-delay=".5s" data-wow-duration="2s">
+                        <div class="box-2 title-a wow fadeInUp" data-wow-delay=".5s" data-wow-duration="2s"
+                            data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
                             <div class="desc">
                                 <span class="title-b">從血液開始，重啟健康節奏<br>
                                 </span>
@@ -285,33 +298,36 @@
             </div>
         </section>
         <!-- 關於梵雅2 -->
-        <section class="ab2 sc-snap " id="sec5">
+        <section class="ab2 sc-snap" id="sec5">
             <div class="container py-5">
                 <div class="row justify-content-center align-items-center py-5">
                     <div class="col-lg-4">
-                        <div class="box-3 title-b wow fadeInRight" data-wow-duration="3s">
+                        <div class="box-3 title-b wow fadeInRight" data-wow-duration="3s" data-aos="fade-right"
+                            data-aos-duration="3000">
                             科學逆齡，活出本質年輕
                         </div>
                     </div>
 
                     <div class="col-lg-4 order-3 order-lg-0">
                         <div class="box-img box-img3 position-relative">
-                            <img class="img-fluid wow fadeInLeft" data-wow-duration="2s" src="./img/box-img3.png"
-                                alt="梵雅康健 Fanya Regenerative Health">
+                            <img class="img-fluid wow fadeInLeft" data-wow-duration="2s" data-aos="fade-left"
+                                data-aos-duration="2000" src="./img/box-img3.png" alt="梵雅康健 Fanya Regenerative Health">
                             <div class="logo-w ">
-                                <img class="img-fluid wow fadeInRight" data-wow-duration="2s" src="./img/logo_W.png"
+                                <img class="img-fluid wow fadeInRight" data-wow-duration="2s" data-aos="fade-right"
+                                    data-aos-duration="2000" src="./img/logo_W.png"
                                     alt="梵雅康健 Fanya Regenerative Health">
                             </div>
                         </div>
                         <div class="s ">
-                            <a class="btn btn-secondary  wow  fadeInRight" data-wow-duration="2s" href="./member.html"
-                                target="_blank">會員專區<span>+</span></a>
-                            <a class="btn btn-secondary wow  fadeInRight" data-wow-duration="2s"
-                                href="tel:0212345678">撥打電話<span>+</span></a>
+                            <a class="btn btn-secondary  wow  fadeInRight" data-wow-duration="2s" data-aos="fade-right"
+                                data-aos-duration="2000" href="./member.html" target="_blank">會員專區<span>+</span></a>
+                            <a class="btn btn-secondary wow  fadeInRight" data-wow-duration="2s" data-aos="fade-right"
+                                data-aos-duration="2000" href="tel:0212345678">撥打電話<span>+</span></a>
                         </div>
                     </div>
                     <div class="col-lg-4 pb-3 pb-lg-0">
-                        <div class="box-3 title-a wow fadeInLeft" data-wow-duration="3s">
+                        <div class="box-3 title-a wow fadeInLeft" data-wow-duration="3s" data-aos="fade-left"
+                            data-aos-duration="3000">
                             <p>我們相信，真正的健康不是治療疾病，<br class="d-none d-lg-block">
                                 而是從源頭預防、從循環開始、<br class="d-none d-lg-block">
                                 由內而外活化每一個細胞的年輕力。
@@ -326,11 +342,12 @@
         <section class="sc-snap" id="sec6">
             <div class="container py-5">
                 <div class="outter-box">
-                    <div class="title_i_box wow fadeInDown" data-wow-duration="2s">
+                    <div class="title_i_box wow fadeInDown" data-wow-duration="2s" data-aos="fade-down"
+                        data-aos-duration="2000">
                         <h6>Our Team</h6>
                         <h4>醫療團隊</h4>
                     </div>
-                    <div class="doctor_box" data-wow-duration="4s">
+                    <div class="doctor_box">
                         <div class="swiper-outter">
                             <div class="swiper">
                                 <div class="swiper-wrapper">
@@ -373,16 +390,15 @@
                         </div>
                     </div>
                     <div class="text-center mt-5">
-                        <a class="btn-primary wow fadeInLeft" data-wow-duration="4s"
-                            href="./team.html">查看更多<span>+</span></a>
+                        <a class="btn-primary wow fadeInLeft" data-wow-duration="4s" data-aos="fade-left"
+                            data-aos-duration="3000" href="./team.html">查看更多<span>+</span></a>
                     </div>
                 </div>
             </div>
 
         </section>
-
     </main>
-    <footer>
+    <footer class="sc-snap ">
         <div class="footer_info">
             <div class="footer_logo">
                 <a href="https://www.brillianskin.tw"><img src="./img/logo.png"
@@ -443,11 +459,15 @@
     <script src="./css/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/clamp.js"></script>
     <!-- wow -->
-    <script src="./js/wow.min.js"></script>
+    <!-- <script src="./js/wow.min.js"></script> -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
     <script src="./js/main.js"></script>
     <script>
         $(function () {
-            new WOW().init();
+            AOS.init({
+                once: true // 所有動畫只執行一次
+            });
         })
 
     </script>
