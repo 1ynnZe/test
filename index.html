@@ -465,9 +465,13 @@
     <script src="./js/main.js"></script>
     <script>
         $(function () {
-            AOS.init({
-                once: true // 所有動畫只執行一次
-            });
+
+            if ($(window).width() > 992) {
+                AOS.init({
+                    once: true // 所有動畫只執行一次
+                });
+            }
+
         })
 
     </script>
