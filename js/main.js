@@ -1,14 +1,6 @@
 
 $(function () {
 
-    //wow
-    // if ($(window).width() > 992) {
-    //     new WOW().init();
-    // }
-
-
-
-
     //導覽列子項目 
     function scrollDropDown() {
         if ($(window).width() < 992) {

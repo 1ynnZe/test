@@ -239,6 +239,51 @@ body {
   letter-spacing: 1px;
 }
 
+
+body,
+html,
+.container {
+  overflow-x: hidden !important;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+main.index::-webkit-scrollbar {
+  display: none;
+  /* Chrome/Safari 隱藏 */
+}
+
+// main:not(.index) {
+//   height: calc(100vh - 77px);
+//   /* 扣掉 header 高度 */
+//   overflow-y: auto;
+// }
+
+/* 自訂滾動條樣式（內頁專用） */
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+main:not(.index)::-webkit-scrollbar {
+  width: 2px !important;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+main:not(.index)::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+main:not(.index)::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+
+
+
+
 main {
   margin-top: 75px;
 
@@ -2566,14 +2611,12 @@ h4.blog_category_title {
         img {
           object-fit: cover;
           min-height: 200px;
+          border-radius: 0;
+          max-width: 100%;
         }
 
       }
 
-      img {
-        border-radius: 0;
-        max-width: 100%;
-      }
 
       .desc {
         padding: 0 40px 0 0;
@@ -2756,7 +2799,7 @@ section.contact {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 992px) {
   section.contact {
     flex-direction: column;
     padding-bottom: 0;
@@ -2791,6 +2834,8 @@ section.contact {
 
 /* 醫美產品 */
 .products-list {
+  justify-content: center;
+
   .pic {
     display: block;
     position: relative;
@@ -2818,10 +2863,19 @@ section.contact {
   }
 
   .item {
-    width: 24%;
     display: inline-block;
     vertical-align: top;
     padding: 0 7px;
     margin: 0 0 14px 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .products-list {
+    justify-content: start;
+
+    .item {
+      width: 24%;
+    }
   }
 }
