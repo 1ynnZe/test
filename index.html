@@ -203,7 +203,7 @@
                         </ul>
                     </div>
                     <div class="text-center mt-5">
-                        <a class="btn btn-primary" data-aos="fade-left" data-aos-duration="2000"
+                        <a class="btn btn-primary " data-aos="fade-left" data-aos-duration="2000"
                             href="./news.html">查看更多<span>+</span></a>
                     </div>
                 </div>
@@ -347,7 +347,7 @@
                         </div>
                     </div>
                     <div class="text-center mt-5">
-                        <a class="btn-primaryt" data-aos="fade-left" data-aos-duration="3000"
+                        <a class="btn btn-primary" data-aos="fade-left" data-aos-duration="3000"
                             href="./team.html">查看更多<span>+</span></a>
                     </div>
                 </div>
@@ -428,8 +428,9 @@
     <script>
         $(function () {
             AOS.init();
-            $('.aos-init').removeClass('aos-animate'); // 動畫第二次不觸發
 
+
+            // $('.aos-init.aos-animated').removeClass('aos-animate'); // 動畫第二次不觸發
             $("#main").fullpage({
                 navigation: false, // 顯示導行列
                 navigationPosition: "right",// 導行列位置
@@ -440,6 +441,10 @@
                         }
                     });
                 }
+            })
+            //限首頁
+            $('#js-goTopBtn').on('click', function () {
+                $.fn.fullpage.moveTo(1);
             })
 
         })

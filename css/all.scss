@@ -891,7 +891,7 @@ footer {
     .carousel-inner {
       top: -36px;
       transform: translateY(-0%);
-      height: calc(100vh - 80px);
+      height: calc(100vh - 82px);
 
     }
 
@@ -998,6 +998,10 @@ footer {
     border: 1px #f6f6f6 solid;
     margin-bottom: 7px;
     background: #fafafa;
+
+    &:nth-child(n+4) {
+      display: none;
+    }
 
     a {
       padding: 10px;
@@ -1233,8 +1237,6 @@ section.ab2:not(.section) {
 
 @media screen and (max-width: 1200px) {
   section.ab2 {
-    padding-top: 180px;
-
     .logo-w {
       top: 0;
 

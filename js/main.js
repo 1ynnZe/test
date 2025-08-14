@@ -24,7 +24,16 @@ $(function () {
     }
     scrollDropDown()
 
+    //檢查aos動畫 不要讓元素消失 
+    let checkTimer = setInterval(function () {
+        let $el = $('.aos-init');
 
+        if ($el.length && !$el.hasClass('aos-animate')) {
+            $el.addClass('aos-init aos-animate');
+            console.log('已自動加上 aos-animate');
+            clearInterval(checkTimer); // 加完就停掉
+        }
+    }, 2000);
 
 
     //js-goTopBtn
