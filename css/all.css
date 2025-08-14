@@ -11191,10 +11191,7 @@ section.clinic .btn-sm, section.clinic .btn-group-sm > .btn {
 .schedule table tbody > tr td:first-child {
   width: 100px;
   min-width: 100px;
-  -moz-text-align-last: left;
-       text-align-last: left;
-  padding-left: 0;
-  padding-right: 0;
+  text-align: center;
 }
 
 @media (max-width: 960px) {
@@ -11275,7 +11272,10 @@ section.m-bg2 table.table tfoot,
 section.m-bg2 table.table tr,
 section.m-bg2 table.table td,
 section.m-bg2 table.table th {
-  max-width: 80px;
+  min-width: 150px;
+}
+section.m-bg2 .form-card .news_list ul li p {
+  width: 100%;
 }
 
 .form-card {

@@ -1927,9 +1927,7 @@ section.clinic {
       td:first-child {
         width: 100px;
         min-width: 100px;
-        text-align-last: left;
-        padding-left: 0;
-        padding-right: 0;
+        text-align: center;
       }
     }
 
@@ -2052,8 +2050,12 @@ section.m-bg2 {
     tr,
     td,
     th {
-      max-width: 80px;
+      min-width: 150px;
     }
+  }
+
+  .form-card .news_list ul li p {
+    width: 100%;
   }
 }
 
