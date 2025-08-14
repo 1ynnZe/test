@@ -10322,10 +10322,10 @@ footer .copy {
 }
 
 @media (max-width: 991.98px) {
-  #carouselBanner .carousel-item img {
-    height: 405px;
-    -o-object-fit: cover;
-       object-fit: cover;
+  #carouselBanner .carousel-inner {
+    top: -36px;
+    transform: translateY(0%);
+    height: calc(100vh - 80px);
   }
 }
 /* 最新消息 */
