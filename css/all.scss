@@ -221,7 +221,11 @@ ul {
 }
 
 
-
+body,
+html,
+.container {
+  overflow-x: hidden !important;
+}
 
 body {
   margin: 0;
@@ -1882,9 +1886,7 @@ section.clinic {
       td:first-child {
         width: 100px;
         min-width: 100px;
-        text-align-last: left;
-        padding-left: 0;
-        padding-right: 0;
+        text-align: center;
       }
     }
 
@@ -1920,6 +1922,7 @@ section.clinic {
   }
 
 }
+
 
 /* 門診預約 */
 .schedule {

@@ -9786,6 +9786,12 @@ ul {
   padding: 0;
 }
 
+body,
+html,
+.container {
+  overflow-x: hidden !important;
+}
+
 body {
   margin: 0;
   background-color: #EEEFEA;
@@ -11158,10 +11164,7 @@ section.clinic .btn-sm, section.clinic .btn-group-sm > .btn {
 .schedule table tbody > tr td:first-child {
   width: 100px;
   min-width: 100px;
-  -moz-text-align-last: left;
-       text-align-last: left;
-  padding-left: 0;
-  padding-right: 0;
+  text-align: center;
 }
 
 @media (max-width: 960px) {
