@@ -9800,39 +9800,6 @@ body {
   letter-spacing: 1px;
 }
 
-body,
-html,
-.container {
-  overflow-x: hidden !important;
-}
-
-html::-webkit-scrollbar,
-body::-webkit-scrollbar,
-main.index::-webkit-scrollbar {
-  display: none;
-  /* Chrome/Safari 隱藏 */
-}
-
-/* 自訂滾動條樣式（內頁專用） */
-html::-webkit-scrollbar,
-body::-webkit-scrollbar,
-main:not(.index)::-webkit-scrollbar {
-  width: 2px !important;
-}
-
-html::-webkit-scrollbar,
-body::-webkit-scrollbar,
-main:not(.index)::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 4px;
-}
-
-html::-webkit-scrollbar,
-body::-webkit-scrollbar,
-main:not(.index)::-webkit-scrollbar-track {
-  background: transparent !important;
-}
-
 main {
   margin-top: 75px;
 }
@@ -10322,10 +10289,10 @@ footer .copy {
 }
 
 @media (max-width: 991.98px) {
-  #carouselBanner .carousel-inner {
-    top: -36px;
-    transform: translateY(0%);
-    height: calc(100vh - 82px);
+  #carouselBanner .carousel-item img {
+    height: 405px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 /* 最新消息 */
@@ -10415,9 +10382,6 @@ footer .copy {
     border: 1px #f6f6f6 solid;
     margin-bottom: 7px;
     background: #fafafa;
-  }
-  .news_list ul li:nth-child(n+4) {
-    display: none;
   }
   .news_list ul li a {
     padding: 10px;
@@ -10610,6 +10574,9 @@ section.ab2:not(.section) .container {
   }
 }
 @media screen and (max-width: 1200px) {
+  section.ab2 {
+    padding-top: 180px;
+  }
   section.ab2 .logo-w {
     top: 0;
   }
@@ -11191,7 +11158,10 @@ section.clinic .btn-sm, section.clinic .btn-group-sm > .btn {
 .schedule table tbody > tr td:first-child {
   width: 100px;
   min-width: 100px;
-  text-align: center;
+  -moz-text-align-last: left;
+       text-align-last: left;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @media (max-width: 960px) {
@@ -11718,6 +11688,8 @@ h4.blog_category_title, .blog_category_title.h4 {
     -o-object-fit: cover;
        object-fit: cover;
     min-height: 200px;
+  }
+  .listblog .blog_item img {
     border-radius: 0;
     max-width: 100%;
   }
@@ -11863,7 +11835,7 @@ section.contact .input-box .form-select::-webkit-input-placeholder {
   font-size: 14px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   section.contact {
     flex-direction: column;
     padding-bottom: 0;
@@ -11890,9 +11862,6 @@ section.contact .input-box .form-select::-webkit-input-placeholder {
   }
 }
 /* 醫美產品 */
-.products-list {
-  justify-content: center;
-}
 .products-list .pic {
   display: block;
   position: relative;
@@ -11917,17 +11886,9 @@ section.contact .input-box .form-select::-webkit-input-placeholder {
   height: 44px;
 }
 .products-list .item {
+  width: 24%;
   display: inline-block;
   vertical-align: top;
   padding: 0 7px;
   margin: 0 0 14px 0;
-}
-
-@media screen and (min-width: 992px) {
-  .products-list {
-    justify-content: start;
-  }
-  .products-list .item {
-    width: 24%;
-  }
 }/*# sourceMappingURL=all.css.map */
