@@ -10875,8 +10875,8 @@ section.rt_page .article-header .h6 {
 .doctor_box .swiper img,
 .doctor_box .doctor_img img {
   max-width: 100%;
-  width: 260px;
-  height: 450px;
+  width: 250px;
+  height: 420px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 0 0 160px 160px;
@@ -10889,10 +10889,10 @@ section.rt_page .article-header .h6 {
 .doctor_box .doctor_img .doctor::before {
   content: url("../img/doctor_bg.png");
   overflow: hidden;
-  background-color: #cbfffe;
+  background-color: transparent;
   position: absolute;
   z-index: -1;
-  top: 50px;
+  top: 20px;
   left: 50%;
   width: 260px;
   height: 400px;
@@ -10957,8 +10957,14 @@ section.rt_page .article-header .h6 {
 
 .doctor_desc {
   position: relative;
+  line-height: 1.6;
 }
 .doctor_desc p {
+  min-width: 240px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.doctor_desc .col-12 p {
   margin-bottom: 62px;
   display: -webkit-box;
   -webkit-line-clamp: 10;
@@ -11072,6 +11078,11 @@ section.rt_page .article-header .h6 {
 }
 
 /* 門診表 */
+.clinic-note {
+  color: #4BBDBF;
+  font-weight: 300;
+}
+
 .appoint_tlt,
 .week_tlt {
   text-align: center;
@@ -11247,10 +11258,12 @@ section.m-bg2 table.table td,
 section.m-bg2 table.table th {
   min-width: 150px;
 }
-section.m-bg2 .form-card .news_list ul li p {
-  width: 100%;
-}
 
+@media (max-width: 768px) {
+  section.m-bg2 .form-card .news_list ul li p {
+    width: 100%;
+  }
+}
 .form-card {
   font-size: 14px;
   position: relative;
@@ -11803,6 +11816,9 @@ section.contact .imgLogo img {
   width: 280px;
   margin-bottom: 20px;
   opacity: 0.7;
+}
+section.contact .imgLogo ~ p {
+  padding-left: 3px;
 }
 section.contact .imgBox img {
   -o-object-fit: cover;

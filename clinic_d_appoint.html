@@ -129,11 +129,10 @@
                             <div class="col-auto">
                                 <select class="form-select" id="select_doctor">
                                     <option selected>全部醫師</option>
-                                    <option value="許茗鈞">許茗鈞</option>
-                                    <option value="吳若薇">吳若薇</option>
-                                    <option value="胡怡萱">胡怡萱</option>
-                                    <option value="劉人鳳">劉人鳳</option>
-                                    <option value="王大明">王大明</option>
+                                    <option value="廖桂敏">廖桂敏</option>
+                                    <option value="曾宇泰">曾宇泰</option>
+                                    <option value="黃友君">黃友君</option>
+                                    <option value="莊閔堯">莊閔堯</option>
                                 </select>
                             </div>
                             <div class="col-auto">
@@ -160,7 +159,7 @@
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>09:00-<br class="d-lg-none">12:00</td>
+                                            <td>早班<br>09:30-17:30</td>
                                             <td data-day="1" data-period="morning"></td>
                                             <td data-day="2" data-period="morning"></td>
                                             <td data-day="3" data-period="morning"></td>
@@ -169,7 +168,7 @@
                                             <td data-day="6" data-period="morning"></td>
                                         </tr>
                                         <tr>
-                                            <td>13:30-<br class="d-lg-none">17:00</td>
+                                            <td>晚班<br>12:30-<br class="d-lg-none">20:30</td>
                                             <td data-day="1" data-period="afternoon"></td>
                                             <td data-day="2" data-period="afternoon"></td>
                                             <td data-day="3" data-period="afternoon"></td>
@@ -177,7 +176,7 @@
                                             <td data-day="5" data-period="afternoon"></td>
                                             <td data-day="6" data-period="afternoon"></td>
                                         </tr>
-                                        <tr>
+                                        <!-- <tr>
                                             <td>18:30-<br class="d-lg-none">21:00</td>
                                             <td data-day="1" data-period="night"></td>
                                             <td data-day="2" data-period="night"></td>
@@ -185,11 +184,15 @@
                                             <td data-day="4" data-period="night"></td>
                                             <td data-day="5" data-period="night"></td>
                                             <td data-day="6" data-period="night"></td>
-                                        </tr>
+                                        </tr> -->
                                     </tbody>
                                 </table>
                             </div>
                         </div>
+
+                    </div>
+                    <div class="col-12 my-3">
+                        <h6 class="clinic-note text-end">* 每週日休診</h6>
                     </div>
                     <div class="text-center py-3 mt-5">
                         <div class="button-area ">
@@ -197,7 +200,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
 
@@ -213,17 +215,15 @@
                 <li>
                     <p class="line"><a target="_blank" href="https://line.me/ti/p/@050xmidb">@050xmidb</a>
                     </p>
-                    <p class="tel"><a>02-12345678</a></p>
+                    <p class="tel"><a>02-25471686</a></p>
                     <p class="mail"><a>fy@xzf.com.tw</a></p>
                     <p class="add"><a>台北市松山區復興北路325號4樓</a></p>
                     <div class="box_link">
                         <a target="_blank" href="https://www.facebook.com/profile.php?id=61579106904011 "><i
                                 class="fa-brands fa-facebook"></i></a>
                         <a target="_blank" href="https://line.me/ti/p/@050xmidb"><i class="fa-brands fa-line"></i></a>
-                        <!-- <a target="_blank"  href="tel:02-12345678"><i
-                                class="fa-solid fa-video"></i></a> -->
-                        <!-- <a target="_blank" href="mailto:fy@xzf.com.tw"><i class="far fa-envelope"></i></a> -->
-                        <a class="me_tp_ig" target="_blank" href="https://www.instagram.com/abcdefg/ "><i
+
+                        <a class="me_tp_ig" target="_blank" href="https://www.instagram.com/fan_ya.beauty "><i
                                 class="fa-brands fa-instagram"></i></a>
                     </div>
                 </li>
@@ -241,10 +241,10 @@
         <a href="https://www.facebook.com/profile.php?id=61579106904011" target="_blank">
             <img src="./img/fb.png" alt="梵雅·青春不老計畫">
         </a>
-        <a href="https://www.instagram.com/abcdefg/" target="_blank">
+        <a href="https://www.instagram.com/fan_ya.beauty" target="_blank">
             <img src="./img/ig.png" alt="梵雅康健 Fanya Regenerative Health">
         </a>
-        <a href="tel:0212345678" target="_blank">
+        <a href="tel:+886-2-25471686" target="_blank">
             <img src="./img/tel.png" alt="梵雅康健 Fanya Regenerative Health">
         </a>
         <a href="https://maps.app.goo.gl/d5Gn5yVsFBpFKgZ96" target="_blank">
@@ -278,36 +278,32 @@
     <script>
         $(function () {
 
-            //(模擬資料) 固定班表
+            //(模擬資料) 固定班表 
             const doctorTimeData = {
                 1: { // 星期一
-                    morning: ["許茗鈞"],
-                    afternoon: ["吳若薇"],
-                    night: ["胡怡萱"]
+                    morning: ["廖桂敏"],
+                    afternoon: ["廖桂敏"],
+                    // night: [""]
                 },
                 2: { // 星期二
-                    morning: [""],
-                    afternoon: ["吳若薇"],
-                    night: ["胡怡萱"]
+                    morning: ["曾宇泰"],
+                    afternoon: ["廖桂敏"],
                 },
                 3: {// 星期三
-                    morning: ["許茗鈞"],
-                    afternoon: [""],
-                    night: ["胡怡萱"]
+                    morning: ["廖桂敏"],
+                    afternoon: ["輪休"],
                 },
                 4: {// 星期四
-                    morning: [""],
-                    afternoon: ["王大明"],
-                    night: [""]
+                    morning: ["黃友君"],
+                    afternoon: ["廖桂敏"],
                 },
                 5: {// 星期五
-                    morning: ["吳若薇"],
-                    afternoon: [""],
-                    night: ["胡怡萱"]
+                    morning: ["廖桂敏"],
+                    afternoon: ["黃友君"],
                 },
                 6: {// 星期六
-                    morning: ["吳若薇"],
-                    afternoon: ["許茗鈞"],
+                    morning: ["莊閔堯"],
+                    afternoon: ["週六無晚班"],
                 },
 
             };
@@ -317,19 +313,17 @@
             //(模擬資料) 特定日期班表
             const doctorTimeData_s = {
                 "2025-08-06": {
-                    morning: [""],
+                    morning: ["廖桂敏"],
                     afternoon: [""],
-                    night: ["王大明"]
                 },
             };
 
             //顏色範本
             const doctorColors = {
-                "許茗鈞": "#4A90E2",
-                "吳若薇": "#82eba1",
-                "胡怡萱": "#F5A623",
-                "劉人鳳": "#FF5FC0",
-                "王大明": "#795fff",
+                "廖桂敏": "#FF5FC0",
+                "曾宇泰": "#82eba1",
+                "黃友君": "#F5A623",
+                "莊閔堯": "#4A90E2",
             };
 
             const maxWeeks = 3; // 未來3週內可預約
